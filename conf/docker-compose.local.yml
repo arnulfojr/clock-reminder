@@ -1,0 +1,12 @@
+version: '2'
+services:
+    app:
+        build: .
+        entrypoint: ""
+        restart: always
+        command:
+            - "python"
+            - "init.py"
+        volumes:
+            - .:/app
+
